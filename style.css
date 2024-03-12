@@ -28,7 +28,7 @@
 }
 
 .navBar {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 1.5rem auto;
     border-radius: 5rem;
     display: flex;
@@ -84,7 +84,7 @@ input {
 }
 
 .block {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 3rem auto;
     padding-top: 4rem;
     padding-bottom: 4rem;
