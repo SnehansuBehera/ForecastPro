@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="main">
+            <img class="bgImage" src="" alt="bgImage">
+            <div class="pageCover">
+                <nav class="navBar">
+                    <img src="sun.png" class="forecast" alt="forecast">
+                    <div class="searchBar">
+                        <form>
+                            <button class="speak"><img src="search (2).png" alt=""></button>
+                            <input class="printResult" type="text" placeholder="Search...">
+
+                        </form>
+
+                    </div>
+
+                </nav>
+                <div class="block">
+                    <div class="c1">
+                        <div class="tempdiv">
+                            <h1 class="temp"></h1>
+                            <img src="thermometer.png" alt="thermometer">
+                        </div>
+
+                        <h2 class="city"></h2>
+                        <p class="city overrideStyle tempPara"></p>
+                        <p class="city overrideStyle max-min"></p>
+                        <div class="subC1">
+                            <img src="humidity (1).png" alt="humidity">
+                            <p>Humidity <br><span class="humidity">NaN</span></p>
+                            <img src="wind.png" alt="wind">
+                            <p>Wind Speed <br><span class="windSpeed">NaN</span></p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="c2">
+                        <h1 class="time temp"></h1>
+                        <h3 class="date city"></h3>
+                        <div class="riseSet">
+                            <img class="riseImage" src="sunrise.png" alt="sunrise">
+                            <div class="rise-setTime">
+                                <p>Sunrise</p>
+                                <p class="timeOfrise">NaN</p>
+                            </div>
+                            <img class="setImage" src="sunset.png" alt="sunset">
+                            <div class="rise-setTime">
+                                <p>Sunset</p>
+                                <p class="timeOfset">NaN</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="app.js"></script>
+    <script src="weathers.js"></script>
+</body>
+
+</html>
