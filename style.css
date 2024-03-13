@@ -48,14 +48,14 @@
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    box-shadow: -.2rem .3rem rgba(11, 11, 11, 0.628);
+    box-shadow: -.2rem .3rem .4rem rgba(11, 11, 11, 0.628);
 }
 
 input {
-    padding: .7rem 1.5rem;
+    padding: .9rem 1.5rem;
     box-sizing: border-box;
     border: .15rem solid #ccc;
-    border-radius: 3rem;
+    border-radius: 5rem;
     font-size: 1rem;
     background-color: white;
     float: right;
@@ -77,7 +77,7 @@ input {
     justify-content: space-between;
     align-items: center;
     background-color: #31363f88;
-    box-shadow: -.2rem .4rem rgba(240, 237, 237, 0.041);
+    box-shadow: -.3rem .2rem .6rem rgba(5, 5, 5, 0.674);
 
 }
 
