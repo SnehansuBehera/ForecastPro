@@ -18,14 +18,17 @@ var windSpeed = document.querySelector(".windSpeed");
 var humidity = document.querySelector(".humidity");
 var form = document.querySelector("form");
 var loader = document.getElementById('preloader');
+var block = document.querySelector('block');
+
+bg.addEventListener('load', () => {
+    loader.style.display = 'none';
+})
 
 inputCity.value = 'Kalyani';
 citySite = inputCity.value;
 async function fetchWeather(citySite) {
 
-    window.addEventListener('load', () => {
-        loader.style.display = 'none';
-    })
+
 
     cityName = citySite;
     inputCity.blur();

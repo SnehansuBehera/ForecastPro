@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-/* .parent {
-    position: relative;
-} */
 
 .bgImage {
     position: absolute;
@@ -64,17 +61,6 @@ input {
     float: right;
 }
 
-/* .speak {
-    padding: 1.30rem 1.5rem;
-    float: right;
-    border: none;
-    background-color: rgba(43, 66, 239, 0.489);
-    color: white;
-    border-top-right-radius: 2rem 2rem;
-    border-bottom-right-radius: 2rem 2rem;
-
-
-} */
 
 .speak img {
     width: 1.1rem;
