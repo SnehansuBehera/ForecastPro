@@ -17,10 +17,16 @@ var timeOfset = document.querySelector(".timeOfset");
 var windSpeed = document.querySelector(".windSpeed");
 var humidity = document.querySelector(".humidity");
 var form = document.querySelector("form");
+var loader = document.getElementById('preloader');
 
 inputCity.value = 'Kalyani';
 citySite = inputCity.value;
 async function fetchWeather(citySite) {
+
+    window.addEventListener('load', () => {
+        loader.style.display = 'none';
+    })
+
     cityName = citySite;
     inputCity.blur();
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric` + `&appid=${apiKey}`);

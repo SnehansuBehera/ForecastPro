@@ -19,6 +19,11 @@ const weatherArray = [
         weather: "Clear",
         icon: "./images/sunny (1).png",
         bg: "./images/ClearBg.jpg",
+    },
+    {
+        weather: "Clouds",
+        icon: "./images/cloud (1).png",
+        bg: "./images/CloudBg.jpg",
     }
 
 
