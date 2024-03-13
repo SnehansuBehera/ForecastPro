@@ -2,23 +2,23 @@ const weatherArray = [
 
     {
         weather: "Haze",
-        icon: "haze.png",
-        bg: "HazeBg.jpeg",
+        icon: "./images/haze.png",
+        bg: "./images/HazeBg.jpeg",
     },
     {
         weather: "Drizzle",
-        icon: "drizzle.png",
-        bg: "DrizzleBg.jpg",
+        icon: "./images/drizzle.png",
+        bg: "./images/DrizzleBg.jpg",
     },
     {
         weather: "Rain",
-        icon: "storm.png",
-        bg: "RainBg.jpeg",
+        icon: "./images/storm.png",
+        bg: "./images/RainBg.jpeg",
     },
     {
         weather: "Clear",
-        icon: "sunny (1).png",
-        bg: "ClearBg.jpg",
+        icon: "./images/sunny (1).png",
+        bg: "./images/ClearBg.jpg",
     }
 
 
