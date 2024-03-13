@@ -6,6 +6,8 @@ var temp1 = document.querySelector(".temp");
 var city = document.querySelector(".city");
 var tempPara = document.querySelector(".tempPara");
 var max_min = document.querySelector(".max-min");
+var chancesOf = document.querySelector(".chancesOf");
+var favcon = document.querySelector(".favcon");
 var time = document.querySelector(".time");
 var date = document.querySelector(".date");
 var bg = document.querySelector(".bgImage");
@@ -23,6 +25,7 @@ async function fetchWeather(citySite) {
     inputCity.blur();
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric` + `&appid=${apiKey}`);
     var data = await response.json();
+    console.log(data)
     var data1 = data.dt;
     const datas = new Date(data1 * 1000);
     var sunriseTime = data.sys.sunrise;
@@ -36,6 +39,7 @@ async function fetchWeather(citySite) {
 
     tempPara.textContent = `Feels like ${data.main.feels_like}°C`;
     max_min.textContent = `Max: ${data.main.temp_max}°C   Min: ${data.main.temp_min}°C`;
+    chancesOf.textContent = `${data.weather[0].description[0].toUpperCase() + data.weather[0].description.slice(1)} :: Pressure: ${data.main.pressure}`;
     temp1.textContent = `${Math.floor(data.main.temp)}°C`;
     city.textContent = `${data.name}, ${data.sys.country}`;
     time.textContent = `${datas.getHours()}hrs ${datas.getMinutes()}mins`;
@@ -48,6 +52,8 @@ async function fetchWeather(citySite) {
         if (index.weather == data.weather[0].main) {
             bg.src = `${index.bg}`;
             icon.src = `${index.icon}`;
+            favcon.src = `${index.icon}`;
+
         }
     })
     inputCity.value = "";

@@ -86,8 +86,8 @@ input {
 .block {
     max-width: 1200px;
     margin: 3rem auto;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     border-radius: 5rem;
     display: flex;
     justify-content: space-between;
@@ -133,10 +133,29 @@ input {
 
 }
 
+.chances {
+    display: flex;
+    align-items: center;
+}
+
+.override {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 0;
+    padding-left: .5rem;
+
+}
+
 .overrideStyle {
     font-size: 1.5rem;
     font-weight: 400;
     padding-bottom: 0;
+}
+
+.favcon {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 4rem;
 }
 
 .riseSet {
