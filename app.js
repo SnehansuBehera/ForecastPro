@@ -71,7 +71,7 @@ async function fetchWeather(citySite) {
 
     gsap.set('.c1', {
         opacity: 0,
-        x: -80,
+        x: -35,
     })
     gsap.to('.c1', {
         opacity: 1,
@@ -80,7 +80,7 @@ async function fetchWeather(citySite) {
     })
     gsap.set('.c2', {
         opacity: 0,
-        x: 80,
+        x: 35,
     })
     gsap.to('.c2', {
         opacity: 1,
