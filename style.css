@@ -219,6 +219,8 @@ input {
     .block {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding-left: 6%;
         padding-right: 6%;
         background-color: #31363f00;
@@ -259,6 +261,11 @@ input {
 
     .temp {
         font-size: 8vw;
+    }
+
+    .tempdiv img {
+        height: 9vw;
+        width: 9vw;
     }
 
     .city {
