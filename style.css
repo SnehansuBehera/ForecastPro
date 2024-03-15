@@ -15,7 +15,7 @@ html {
 .main {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -86,9 +86,9 @@ input {
 
 .block {
     max-width: 1200px;
+    width: 80%;
     margin: 3rem auto;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding: 2.5rem 4%;
     border-radius: 5rem;
     display: flex;
     justify-content: space-between;
@@ -99,37 +99,41 @@ input {
 }
 
 .tempdiv {
+
     display: flex;
     margin-bottom: 1rem;
 }
 
 .tempdiv img {
-    height: 5.6rem;
-    width: 5.6rem;
+    height: 5.6vw;
+    width: 5.6vw;
 }
 
+/* .c1 {
+    width: 50%;
+} */
+
 .c2 {
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    padding-right: 4rem;
+    overflow: hidden;
 }
 
 .temp {
     z-index: 20;
-    font-size: 5rem;
+    font-size: 5vw;
     font-weight: 700;
     color: white;
-    padding-left: 4rem;
 }
 
 .city {
     z-index: 20;
     padding-top: .2rem;
-    padding-left: 4rem;
     padding-bottom: .8rem;
-    font-size: 3rem;
+    font-size: 4vw;
     font-weight: 600;
     color: white;
 
@@ -142,7 +146,7 @@ input {
 }
 
 .override {
-    font-size: 1.5rem;
+    font-size: 2vw;
     font-weight: 400;
     padding-bottom: 0;
     padding-left: .5rem;
@@ -150,27 +154,26 @@ input {
 }
 
 .overrideStyle {
-    font-size: 1.5rem;
+    font-size: 2vw;
     font-weight: 400;
     padding-bottom: 0;
 }
 
 .favcon {
-    height: 2.5rem;
-    width: 2.5rem;
-    margin-left: 4rem;
+    height: 3vw;
+    width: 3vw;
 }
 
 .riseSet {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1vw;
 }
 
 .riseSet img {
-    height: 4rem;
-    width: 4rem;
+    height: 5vw;
+    width: 5vw;
 }
 
 .rise-setTime {
@@ -179,26 +182,26 @@ input {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2vw;
     font-weight: 400;
 }
 
 .subC1 {
-    padding: 1.5rem;
-    padding-left: 4rem;
+    padding: 1.6vw 0;
     display: flex;
+    flex-shrink: inherit;
     justify-content: space-between;
     align-items: center;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2vw;
     font-weight: 400;
-    gap: 1rem;
+    gap: 1vw;
 
 }
 
 .subC1 img {
-    height: 3rem;
-    width: 3rem;
+    height: 4vw;
+    width: 4vw;
 }
 
 #preloader {
@@ -207,6 +210,33 @@ input {
     width: 100%;
     position: fixed;
     z-index: 100;
+}
+
+
+@media only screen and (max-width: 1064px) {
+
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        padding-left: 6%;
+        padding-right: 6%;
+        background-color: #31363f00;
+        gap: 5vw;
+    }
+
+    .c1 {
+        width: 100%;
+    }
+
+    .subC1 {
+        width: 50%;
+    }
+
+    .c2 {
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -226,4 +256,45 @@ input {
         font-size: 1.2rem;
 
     }
+
+    .temp {
+        font-size: 8vw;
+    }
+
+    .city {
+        font-size: 6vw;
+    }
+
+    .override {
+        font-size: 4vw;
+    }
+
+    .overrideStyle {
+        font-size: 4vw;
+    }
+
+    .favcon {
+        height: 5vw;
+        width: 5vw;
+    }
+
+    .riseSet img {
+        height: 6vw;
+        width: 6vw;
+    }
+
+    .rise-setTime {
+        font-size: 4vw;
+    }
+
+    .subC1 {
+        font-size: 4vw;
+        width: 90%;
+    }
+
+    .subC1 img {
+        height: 6vw;
+        width: 6vw;
+    }
+
 }
